@@ -1,0 +1,67 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.banner-first, .banner-second, .banner-third {
+    user-select: none;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 90px;
+}
+
+#hero .banner-button {
+    width: 100vw;
+}
+
+.banner-button .second-btn {
+    margin-left: 1vw;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+    .banner-button .second-btn {
+        margin-left: 5vw;
+    }
+}
+
+.banner-button > button {
+    margin-top: 2rem;
+    width: 10rem;
+    height: 4rem;
+    border-width: 0;
+    background-color: #ff2929;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.6rem;
+}
+
+.ay-product p {
+    font-weight: 500;
+}
+
+.desc {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.ay-product > .banner-button {
+    align-self: flex-start;
+}
+
+@media screen and (min-width: 1200px) {
+    .left, .right {
+        flex: 1;
+    }
+    .left {
+        padding-left: 10vw;
+    }
+
+    .ay-product > .banner-button {
+        padding-left: 10vw;
+    }
+}
