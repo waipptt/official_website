@@ -88,6 +88,10 @@
         padding-left: 10vw;
     }
 
+    .right {
+        justify-content: space-around;
+    }
+
     .ay-product > .banner-button {
         padding-left: 10vw;
     }
@@ -107,4 +111,28 @@
 
 .hover-btn:hover #aywp {
     display: block;
+}
+
+.ay-product .desc-img{
+    width: 40%;
+}
+
+.ay-product .desc .right .dfzs{
+    width: 80%;
+}
+
+.ay-product .desc .right .why-choose-1{
+    width: 58%;
+}
+
+.ay-product .left .desc-img {
+    width: 50%;
+}
+
+.ay-product .right .desc-img {
+    width: 40%;
+}
+
+.ay-product .bottom .desc-img{
+    width: 100%;
 }
