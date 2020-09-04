@@ -16,7 +16,23 @@
 }
 
 #hero .banner-button {
-    width: 100vw;
+    width: 20vw;
+}
+
+#hero .desc-img {
+    margin-left: 20%;
+    margin-top: 90px;
+    width: 20%;
+}
+
+#hero .image-1, #hero .image-2 {
+    margin-left: 5%;
+    width: 20%;
+}
+
+#hero .image-3 {
+    margin-top: 10%;
+    width: 30%;
 }
 
 .banner-button .second-btn {
@@ -24,6 +40,16 @@
 }
 
 @media only screen and (min-width: 400px) and (max-width: 767px) {
+    #hero .banner-button {
+        width: 50vw;
+    }
+
+    #hero .desc-img {
+        margin-left: 10%;
+        margin-top: 90px;
+        width: 80%;
+    }
+
     .banner-button .second-btn {
         margin-left: 5vw;
     }
@@ -57,6 +83,7 @@
     .left, .right {
         flex: 1;
     }
+
     .left {
         padding-left: 10vw;
     }
@@ -64,4 +91,20 @@
     .ay-product > .banner-button {
         padding-left: 10vw;
     }
+}
+
+.product-info {
+    cursor: pointer;
+}
+
+#aywp, #dfzs {
+    display: none;
+}
+
+.hover-btn:hover #dfzs {
+    display: block;
+}
+
+.hover-btn:hover #aywp {
+    display: block;
 }
