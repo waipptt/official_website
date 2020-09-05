@@ -1,0 +1,134 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+#aywp, #dfzs {
+    display: none;
+}
+
+.hover-btn:hover #dfzs {
+    display: block;
+}
+
+.hover-btn:hover #aywp {
+    display: block;
+}
+
+.desc {
+    padding: 0 150px;
+    justify-content: space-around;
+    height: 800px;
+}
+
+.desc img {
+    height: 400px;
+}
+
+.desc span {
+    letter-spacing: 1px;
+    line-height: 2em;
+    text-indent: 2em;
+    width: 350px;
+}
+
+.card {
+    position: relative;
+    margin-left: 10%;
+    padding: 20px 10px 30px 10px;
+    width: 80%;
+    background-color: #153e82;
+    color: #ffffff;
+}
+
+.card .color-block {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 100px;
+    height: 10px;
+    background-color: #ff9205;
+}
+
+.card .title {
+    margin-left: 20px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.card .content {
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.card .content img {
+    width: 12%;
+}
+
+.step {
+    align-items: flex-start;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.step-1 .round, .step-2 .round {
+    margin-top: 1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.step-1, .step-2 {
+    align-items: flex-start;
+}
+
+.step-1 .round {
+    background-color: #0fbeaf;
+}
+
+.step-2 .round {
+    background-color: #ff8c23;
+}
+
+.step-1 .detail, .step-2 .detail {
+    align-items: flex-start;
+    margin-left: 3rem;
+}
+
+.detail h4 {
+    color: #ffffff;
+}
+
+.step-2 {
+    margin-top: 8rem;
+}
+
+.card .bottom {
+    width: 100%;
+    padding: 0 40px 0 0;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.registry-step {
+    flex: 1;
+}
+
+.registry-step span {
+    text-align: left;
+    width: 60%;
+    height: 80px;
+}
