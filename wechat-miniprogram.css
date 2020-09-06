@@ -73,11 +73,23 @@
     width: 12%;
 }
 
+@media screen and (max-width: 600px) {
+    .card .content img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .step {
+        max-width: 80%;
+    }
+}
+
 .step {
     align-items: flex-start;
     margin-top: 1rem;
     min-width: 160px;
-    max-width: 80%;
+    /*max-width: 80%;*/
 }
 
 .step-1 .round, .step-2 .round {
@@ -134,5 +146,5 @@
 .registry-step span {
     text-align: left;
     /*width: 60%;*/
-    min-height: 80px;
+    /*min-height: 80px;*/
 }
