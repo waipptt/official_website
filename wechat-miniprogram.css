@@ -22,9 +22,9 @@
 }
 
 .desc {
-    padding: 0 150px;
+    padding: 50px 0;
     justify-content: space-around;
-    height: 800px;
+    max-height: 800px;
 }
 
 .desc img {
@@ -76,7 +76,8 @@
 .step {
     align-items: flex-start;
     margin-top: 1rem;
-    width: 50%;
+    min-width: 160px;
+    max-width: 80%;
 }
 
 .step-1 .round, .step-2 .round {
@@ -92,7 +93,8 @@
 }
 
 .step-1, .step-2 {
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .step-1 .round {
@@ -106,6 +108,7 @@
 .step-1 .detail, .step-2 .detail {
     align-items: flex-start;
     margin-left: 3rem;
+    max-width: 78%;
 }
 
 .detail h4 {
@@ -125,10 +128,11 @@
 
 .registry-step {
     flex: 1;
+    min-width: 160px;
 }
 
 .registry-step span {
     text-align: left;
-    width: 60%;
-    height: 80px;
+    /*width: 60%;*/
+    min-height: 80px;
 }
