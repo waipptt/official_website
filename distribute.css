@@ -29,9 +29,10 @@
 
 .card {
     position: relative;
-    margin-left: 10%;
-    padding: 20px 10px 30px 10px;
-    width: 80%;
+    padding: 20px 2% 30px 2%;
+    width: 90%;
+    max-width: 1920px;
+    margin: 2% auto;
     background-color: #153e82;
     color: #ffffff;
 }
