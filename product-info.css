@@ -1,0 +1,11 @@
+#aywp, #dfzs {
+    display: none;
+}
+
+.hover-btn:hover #dfzs {
+    display: block;
+}
+
+.hover-btn:hover #aywp {
+    display: block;
+}

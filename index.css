@@ -30,30 +30,8 @@
     max-height: 300px;
 }
 
-#hero .image-1, #hero .image-2 {
-
-}
-
-#hero .image-3 {
-
-}
-
 .banner-button .second-btn {
     margin-left: 1vw;
-}
-
-@media only screen and (min-width: 400px) and (max-width: 767px) {
-    #hero .banner-button {
-        width: 60vw;
-    }
-
-    #hero .desc-img {
-
-    }
-
-    .banner-button .second-btn {
-        margin-left: 5vw;
-    }
 }
 
 .banner-button > button {
@@ -65,6 +43,12 @@
     color: #fff;
     border-radius: 10px;
     font-size: 1.6rem;
+}
+
+.ay-product {
+    width: 90%;
+    max-width: 1920px;
+    margin: auto;
 }
 
 .ay-product p {
@@ -83,18 +67,6 @@
 
 .product-info {
     cursor: pointer;
-}
-
-#aywp, #dfzs {
-    display: none;
-}
-
-.hover-btn:hover #dfzs {
-    display: block;
-}
-
-.hover-btn:hover #aywp {
-    display: block;
 }
 
 .ay-product .desc .right .dfzs{
@@ -148,5 +120,24 @@
 
     .ay-product .right .desc-img {
         max-width: 40%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    #hero .banner-button {
+        width: 60vw;
+    }
+
+
+    .banner-button .second-btn {
+        margin-left: 5vw;
+    }
+
+    .banner-first, .banner-second, .banner-third, #hero .desc-img {
+        max-width: 85%;
+    }
+
+    .ay-product .desc .right .dfzs {
+        width: 100%;
     }
 }

@@ -9,18 +9,6 @@
     flex-direction: column;
 }
 
-#aywp, #dfzs {
-    display: none;
-}
-
-.hover-btn:hover #dfzs {
-    display: block;
-}
-
-.hover-btn:hover #aywp {
-    display: block;
-}
-
 .desc {
     padding: 50px 0;
     justify-content: space-around;
@@ -134,4 +122,18 @@
     text-align: left;
     width: 60%;
     height: 80px;
+}
+
+@media screen and (min-width: 960px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+    .desc img {
+        max-width: 85%;
+    }
+
+    .iphone {
+        margin-bottom: 10%;
+    }
 }
