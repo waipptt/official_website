@@ -27,6 +27,16 @@
     <!-- Theme Color CSS -->
     <link rel="stylesheet" href="http://q.aiyongbao.com/ft/website/assets/css/colors/blue.css"/>
     <link rel="stylesheet" href="product-info.css"/>
+
+    <script>
+        function showQrcode() {
+            document.getElementById("qrcode").setAttribute('style', 'display:block');
+        }
+
+        function hideQrcode() {
+            document.getElementById("qrcode").setAttribute('style', 'display:none');
+        }
+    </script>
 </head>
 
 <body>
@@ -38,6 +48,10 @@
         <div class="loader-1">
         </div>
     </div>
+</div>
+
+<div id="qrcode" onclick="hideQrcode()">
+    <img src="https://q.aiyongbao.com/wechat/images/20200904/aywp_product/2.7-img-1.jpg" alt="二维码">
 </div>
 
 <div class="wrapper">
@@ -126,8 +140,8 @@
                                     <h4>小程序电商解决方案</h4>
                                     <h4>助力企业or个人构建私域流量进入电商新时代</h4>
                                     <div class="banner-button">
-                                        <Button>免费开店</Button>
-                                        <Button class="second-btn">了解详情</Button>
+                                        <button onclick="showQrcode()">免费开店</button>
+                                        <button onclick="location.href='wechat-miniprogram.html'">了解详情</button>
                                     </div>
                                 </div>
                                 <img class="desc-img" src="https://q.aiyongbao.com/wechat/images/20200904/aywp_banner.png" alt="" />
@@ -141,7 +155,7 @@
                                     <h4>海量优质货源供你选择</h4>
                                     <h4>多渠道营销快速拓展流量 促进业绩增长</h4>
                                     <div class="banner-button">
-                                        <Button>了解详情</Button>
+                                        <button onclick="location.href='wechat-miniprogram.html'">了解详情</button>
                                     </div>
                                 </div>
                                 <img class="desc-img image-1" src="https://q.aiyongbao.com/wechat/images/20200904/banner_2_1.png" alt="" />
@@ -155,7 +169,7 @@
                                     <h4>一件铺货到多个平台，多个店铺真正实现0库存代发</h4>
                                     <h4>随时随地处理代销订单助力卖家轻松开店</h4>
                                     <div class="banner-button">
-                                        <Button>了解详情</Button>
+                                        <button onclick="location.href='distribute.html'">了解详情</button>
                                     </div>
                                 </div>
                                 <img class="desc-img image-3" src="https://q.aiyongbao.com/wechat/images/20200904/banner_3.jpg" alt="" />
@@ -190,8 +204,8 @@
                         <p>收益管理、旺铺订单、商品管理、经营分析、赚赚货源、</p>
                         <p>订单通知、限时折扣、公众号引流……更多</p>
                         <div class="banner-button">
-                            <Button>免费开店</Button>
-                            <Button class="second-btn">了解详情</Button>
+                            <button onclick="showQrcode()">免费开店</button>
+                            <button onclick="location.href='wechat-miniprogram.html'">了解详情</button>
                         </div>
                     </div>
                     <div class="right flex">
@@ -221,8 +235,8 @@
                         <p>收益管理、旺铺订单、商品管理、经营分析、赚赚货源、订单通知</p>
                         <p>限时折扣、公众号引流……更多</p>
                         <div class="banner-button">
-                            <Button>免费开店</Button>
-                            <Button class="second-btn">了解详情</Button>
+                            <button onclick="showQrcode()">免费开店</button>
+                            <button onclick="location.href='wechat-miniprogram.html'">了解详情</button>
                         </div>
                     </div>
                     <div class="right flex">
@@ -248,8 +262,7 @@
                         <h4>强大的功能，极大的减少人力成本</h4>
                         <p>商品铺货、商品管理、订单管理、店铺设置、特色工具等等</p>
                         <div class="banner-button">
-                            <Button>免费开店</Button>
-                            <Button class="second-btn">了解详情</Button>
+                            <button onclick="location.href='distribute.html'">了解详情</button>
                         </div>
                     </div>
                     <div class="right flex">
