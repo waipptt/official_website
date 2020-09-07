@@ -2,37 +2,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .flex-column {
     flex-direction: column;
 }
 
+.banner {
+    margin-top: 90px;
+    justify-content: space-around;
+}
+
 .banner-first, .banner-second, .banner-third {
     user-select: none;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 90px;
 }
 
 #hero .banner-button {
     width: 20vw;
+    margin-bottom: 5vw;
 }
 
 #hero .desc-img {
-    margin-left: 20%;
-    margin-top: 90px;
-    width: 20%;
+    max-width: 100%;
+    max-height: 300px;
 }
 
 #hero .image-1, #hero .image-2 {
-    margin-left: 5%;
-    width: 20%;
+
 }
 
 #hero .image-3 {
-    margin-top: 10%;
-    width: 30%;
+
 }
 
 .banner-button .second-btn {
@@ -41,13 +44,11 @@
 
 @media only screen and (min-width: 400px) and (max-width: 767px) {
     #hero .banner-button {
-        width: 50vw;
+        width: 60vw;
     }
 
     #hero .desc-img {
-        margin-left: 10%;
-        margin-top: 90px;
-        width: 80%;
+
     }
 
     .banner-button .second-btn {
@@ -75,26 +76,9 @@
     width: 100%;
 }
 
-.ay-product > .banner-button {
+.ay-product .banner-button {
     align-self: flex-start;
-}
-
-@media screen and (min-width: 1200px) {
-    .left, .right {
-        flex: 1;
-    }
-
-    .left {
-        padding-left: 10vw;
-    }
-
-    .right {
-        justify-content: space-around;
-    }
-
-    .ay-product > .banner-button {
-        padding-left: 10vw;
-    }
+    margin-bottom: 4vw;
 }
 
 .product-info {
@@ -113,26 +97,56 @@
     display: block;
 }
 
-.ay-product .desc-img{
-    width: 40%;
-}
-
 .ay-product .desc .right .dfzs{
     width: 80%;
 }
 
 .ay-product .desc .right .why-choose-1{
-    width: 58%;
+    width: 100%;
 }
 
 .ay-product .left .desc-img {
-    width: 50%;
+    max-width: 100%;
 }
 
 .ay-product .right .desc-img {
-    width: 40%;
+    max-width: 100%;
 }
 
 .ay-product .bottom .desc-img{
     width: 100%;
+}
+
+@media screen and (min-width: 960px) {
+    .left, .right {
+        flex: 1;
+    }
+
+    .left {
+        margin-left: 10%;
+    }
+
+    .right {
+        justify-content: space-around;
+    }
+
+    .left, .right {
+        min-width: 300px;
+    }
+
+    .ay-product .desc-img{
+        width: 40%;
+    }
+
+    .ay-product > .banner-button {
+        padding-left: 10vw;
+    }
+
+    .ay-product .desc .right .why-choose-1{
+        width: 58%;
+    }
+
+    .ay-product .right .desc-img {
+        max-width: 40%;
+    }
 }
