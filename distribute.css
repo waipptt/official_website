@@ -124,11 +124,11 @@
     height: 80px;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width:900px) {
 
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width:900px) {
     .desc img {
         max-width: 85%;
     }
