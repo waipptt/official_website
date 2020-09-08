@@ -1,6 +1,7 @@
-#qrcode{
+/* --- 二维码 ---*/
+#qrcode {
     position: fixed;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
     width: 100%;
     height: 100%;
@@ -8,16 +9,19 @@
     top: 0;
     display: none;
 }
-#qrcode img{
+
+#qrcode img {
     position: fixed;
     width: 200px;
     height: 200px;
     background-color: aqua;
     left: 50%;
     top: 50%;
-    transform: translate(-100px,-100px);
+    transform: translate(-100px, -100px);
     z-index: 101;
 }
+
+/* --- flex ---*/
 
 .flex {
     display: flex;
@@ -30,45 +34,56 @@
     flex-direction: column;
 }
 
+/* --- banner ---*/
+
 .banner {
-    margin-top: 90px;
+    padding: 0 10%;
     justify-content: space-around;
+    width: 100%;
+    height: 460px;
+}
+
+.banner-first {
+    background-color: #f50048;
+}
+
+.banner-second {
+    background-color: #ff4f0a;
+}
+
+.banner-third {
+    background-color: #158dfe;
 }
 
 .banner-first, .banner-second, .banner-third {
     user-select: none;
-    flex-direction: column;
+}
+
+.banner-first img, .banner-second img, .banner-third img {
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.banner-desc {
+    width: 50%;
     align-items: flex-start;
 }
 
-#hero .banner-button {
-    width: 20vw;
-    margin-bottom: 5vw;
+.banner-desc span {
+    font-size: 20px;
+    color: #ffffff;
 }
 
-#hero .desc-img {
-    max-width: 100%;
-    max-height: 300px;
+.banner-desc span:first-child {
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-weight: 700;
 }
 
-.banner-button .second-btn {
-    margin-left: 1vw;
-}
-
-.banner-button > button {
-    margin-top: 2rem;
-    width: 10rem;
-    height: 4rem;
-    border-width: 0;
-    background-color: #ff2929;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 1.6rem;
-}
+/* --- 旺铺产品介绍 ---*/
 
 .ay-product {
-    width: 90%;
-    max-width: 1920px;
+    width: 1200px;
     margin: auto;
 }
 
@@ -90,11 +105,11 @@
     cursor: pointer;
 }
 
-.ay-product .desc .right .dfzs{
+.ay-product .desc .right .dfzs {
     width: 80%;
 }
 
-.ay-product .desc .right .why-choose-1{
+.ay-product .desc .right .why-choose-1 {
     width: 100%;
 }
 
@@ -106,59 +121,58 @@
     max-width: 100%;
 }
 
-.ay-product .bottom .desc-img{
+.ay-product .bottom .desc-img {
     width: 100%;
 }
 
-@media screen and (min-width: 960px) {
-    .left, .right {
-        flex: 1;
+/* --- 大屏幕 --- */
+@media (min-width: 1200px) {
+
+}
+
+/* --- 平板电脑和小屏电脑之间的分辨率 --- */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .banner {
+        padding: 0 0;
     }
 
-    .left {
-        margin-left: 10%;
-    }
-
-    .right {
-        justify-content: space-around;
-    }
-
-    .left, .right {
-        min-width: 300px;
-    }
-
-    .ay-product .desc-img{
-        width: 40%;
-    }
-
-    .ay-product > .banner-button {
-        padding-left: 10vw;
-    }
-
-    .ay-product .desc .right .why-choose-1{
-        width: 58%;
-    }
-
-    .ay-product .right .desc-img {
-        max-width: 40%;
+    .banner-first img, .banner-second img, .banner-third img {
+        width: 300px;
     }
 }
 
-@media only screen and (max-width: 960px) {
-    #hero .banner-button {
-        width: 60vw;
+/* --- 横向放置的手机和竖向放置的平板之间的分辨率 --- */
+@media (min-width: 481px) and (max-width: 767px) {
+    .banner {
+        height: 800px;
+        padding-top: 90px;
     }
 
-
-    .banner-button .second-btn {
-        margin-left: 5vw;
+    .banner-desc {
+        width: 90%;
     }
 
-    .banner-first, .banner-second, .banner-third, #hero .desc-img {
-        max-width: 85%;
+    .banner-first img, .banner-second img, .banner-third img {
+        width: 500px;
+    }
+}
+
+/* --- 横向放置的手机及分辨率更小的设备 --- */
+@media (max-width: 480px) {
+    .banner {
+        padding: 90px 0 0 0;
+        height: 550px;
     }
 
-    .ay-product .desc .right .dfzs {
-        width: 100%;
+    .banner-desc {
+        width: 90%;
+    }
+
+    .banner-desc span {
+        zoom: 0.7;
+    }
+
+    .banner-first img, .banner-second img, .banner-third img {
+        width: 90%;
     }
 }
