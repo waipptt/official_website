@@ -1,5 +1,11 @@
+.hover-btn .product-info {
+    padding-bottom: 5px !important;
+    cursor: pointer;
+}
+
 #aywp, #dfzs {
     display: none;
+    padding: 5px 15px;
 }
 
 .hover-btn:hover #dfzs {

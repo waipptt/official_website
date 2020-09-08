@@ -147,6 +147,10 @@
     height: 80px;
 }
 
+.step.tool {
+    width: 60vw;
+}
+
 /* --- 平板电脑和小屏电脑之间的分辨率 --- */
 @media (min-width: 768px) and (max-width: 1200px) {
     .desc {
@@ -173,7 +177,7 @@
     }
 
     .step.tool {
-        width: 800px;
+        width: 80vw;
     }
 
     .registry-step {
