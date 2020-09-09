@@ -114,7 +114,7 @@
 .step-1 .detail, .step-2 .detail {
     align-items: flex-start;
     margin-left: 3rem;
-    max-width: 78%;
+    max-width: 85%;
 }
 
 .diff-card-two-img .img-div {
@@ -249,5 +249,10 @@
         min-width: 100%;
         align-items: flex-start;
         margin: 0 0 10% 0;
+    }
+
+    .step-1 .detail, .step-2 .detail {
+        margin-left: 2rem;
+        max-width: 78%;
     }
 }
