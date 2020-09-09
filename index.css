@@ -99,9 +99,10 @@ section:nth-child(odd) {
 
 
 .ay-product, .how-many-choose {
+    margin: auto;
+    padding: 30px 0;
     width: 90%;
     max-width: 1200px;
-    margin: auto;
 }
 
 .ay-product p {
