@@ -55,12 +55,24 @@
     background-color: #f50048;
 }
 
+.banner-first .banner-desc .button-container .banner-btn {
+    color: #f50048;
+}
+
 .banner-second {
     background-color: #ff4f0a;
 }
 
+.banner-second .banner-desc .button-container .banner-btn {
+    color: #f50048;
+}
+
 .banner-third {
     background-color: #158dfe;
+}
+
+.banner-third .banner-desc .button-container .banner-btn {
+    color: #158dfe;
 }
 
 .banner-first, .banner-second, .banner-third {
@@ -88,6 +100,34 @@
     font-weight: 700;
 }
 
+.banner-desc span:not(:first-child) {
+    line-height: 35px;
+}
+
+.button-container {
+    justify-content: flex-start;
+}
+
+.button-container .banner-btn {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.button-container .banner-btn:nth-child(2) {
+    margin-left: 50px;
+}
+
+.left .button-container .banner-btn {
+    color: #ffffff;
+    background-color: #ff2929;
+}
+
 /* --- 旺铺产品介绍 ---*/
 section:nth-child(even) {
     background-color: #ffffff;
@@ -96,7 +136,6 @@ section:nth-child(even) {
 section:nth-child(odd) {
     background-color: #f7f7f7;
 }
-
 
 .ay-product, .how-many-choose {
     margin: auto;
@@ -128,6 +167,10 @@ section:nth-child(odd) {
     flex: 1;
 }
 
+.ay-product .desc .right h4, .ay-product .desc .left h4 {
+    margin-top: 30px;
+}
+
 .ay-product .desc .right {
     justify-content: space-between;
 }
@@ -145,7 +188,20 @@ section:nth-child(odd) {
 }
 
 .how-many-choose .bottom .desc-img {
+    margin-top: 5%;
     width: 100%;
+}
+
+
+.why-choose .right {
+    justify-content: space-around !important;
+    flex: 1.5 !important;
+}
+
+.why-choose .right .why-choose-1 {
+    width: 29vw;
+    max-width: 402px;
+    max-height: 469px;
 }
 
 /* --- 大屏幕 --- */
@@ -228,6 +284,7 @@ section:nth-child(odd) {
     }
 
     .ay-product .desc .right .dfzs {
+        margin: 5% 0;
         width: 100%;
     }
 
