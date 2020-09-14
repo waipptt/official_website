@@ -3,7 +3,7 @@
     cursor: pointer;
 }
 
-#aywp, #dfzs {
+#aywp, #dfzs, #zbzs {
     display: none;
     padding: 5px 15px;
 }
@@ -13,5 +13,9 @@
 }
 
 .hover-btn:hover #aywp {
+    display: block;
+}
+
+.hover-btn:hover #zbzs {
     display: block;
 }
