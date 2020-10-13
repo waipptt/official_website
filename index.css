@@ -229,7 +229,11 @@ section:nth-child(odd) {
         padding: 0 0;
     }
 
-    .banner-first img, .banner-second img, .banner-third img {
+    .banner-first img {
+        width: 200px;
+    }
+
+    .banner-second img, .banner-third img {
         width: 300px;
     }
 
@@ -250,7 +254,11 @@ section:nth-child(odd) {
         width: 90%;
     }
 
-    .banner-first img, .banner-second img, .banner-third img {
+    .banner-first img {
+        width: 200px;
+    }
+
+    .banner-second img, .banner-third img {
         width: 500px;
     }
 
