@@ -164,6 +164,103 @@
     height: 80px;
 }
 
+/* --- banner ---*/
+
+.banner {
+    padding: 0 10%;
+    justify-content: space-around;
+    width: 100%;
+    height: 460px;
+}
+
+.banner-first {
+    background-color: #f50048;
+}
+
+.banner-first .banner-desc .button-container .banner-btn {
+    color: #f50048;
+}
+
+.banner-second {
+    background-color: #ff4f0a;
+}
+
+.banner-second .banner-desc .button-container .banner-btn {
+    color: #f50048;
+}
+
+.banner-third {
+    background-color: #158dfe;
+}
+
+.banner-third .banner-desc .button-container .banner-btn {
+    color: #158dfe;
+}
+
+.banner-first, .banner-second, .banner-third {
+    user-select: none;
+}
+
+.banner-first img {
+    width: 200px;
+}
+
+.banner-second img, .banner-third img {
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.banner-desc {
+    width: 50%;
+    align-items: flex-start;
+}
+
+.banner-desc span {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.banner-desc span:first-child {
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.banner-desc span:not(:first-child) {
+    line-height: 35px;
+}
+
+.button-container {
+    justify-content: flex-start;
+}
+
+.button-container .banner-btn {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.button-container .banner-btn:nth-child(2) {
+    margin-left: 50px;
+}
+
+.button-container.product  .banner-btn:nth-child(2) {
+    margin-left: 48px;
+    background: transparent;
+    color: #ff2929;
+    border: 1px solid #ff2929;
+}
+
+.left .button-container .banner-btn {
+    color: #ffffff;
+    background-color: #ff2929;
+}
+
 /* --- 大屏幕 --- */
 @media (min-width: 1200px) {
     .card .content .step {
@@ -177,6 +274,18 @@
 
 /* --- 平板电脑和小屏电脑之间的分辨率 --- */
 @media (min-width: 768px) and (max-width: 1200px) {
+    .banner {
+        padding: 0 0;
+    }
+
+    .banner-first img {
+        width: 200px;
+    }
+
+    .banner-second img, .banner-third img {
+        width: 300px;
+    }
+
     .desc {
         padding: 50px 0;
     }
@@ -206,6 +315,23 @@
 
 /* --- 横向放置的手机和竖向放置的平板之间的分辨率 --- */
 @media (min-width: 481px) and (max-width: 767px) {
+    .banner {
+        height: 800px;
+        padding-top: 90px;
+    }
+
+    .banner-desc {
+        width: 90%;
+    }
+
+    .banner-first img {
+        width: 200px;
+    }
+
+    .banner-second img, .banner-third img {
+        width: 500px;
+    }
+
     .card .content {
         flex-direction: column;
         align-items: center;
@@ -225,6 +351,27 @@
 
 /* --- 横向放置的手机及分辨率更小的设备 --- */
 @media (max-width: 480px) {
+    .banner {
+        padding: 90px 0 0 0;
+        height: 550px;
+    }
+
+    .banner-desc {
+        width: 90%;
+    }
+
+    .banner-desc span {
+        zoom: 0.7;
+    }
+
+    .banner-first img {
+        width: 50%;
+    }
+
+    .banner-second img, .banner-third img {
+        width: 90%;
+    }
+
     .desc {
         padding: 50px 0;
     }
