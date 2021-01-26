@@ -1,0 +1,260 @@
+/* --- flex ---*/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+/* --- 顶部描述 ---*/
+
+.desc {
+    padding: 50px 50px 50px 0;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.desc img {
+    height: 400px;
+}
+
+.desc span {
+    letter-spacing: 1px;
+    line-height: 2em;
+    text-indent: 2em;
+    max-width: 400px;
+}
+
+/* --- 介绍卡片 ---*/
+
+.card {
+    position: relative;
+    padding: 20px 2% 30px 2%;
+    width: 90%;
+    max-width: 1600px;
+    margin: 2% auto;
+    background-color: #153e82;
+    color: #ffffff;
+}
+
+.card .color-block {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 100px;
+    height: 10px;
+    background-color: #ff9205;
+}
+
+.card .title {
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.card .content {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.step {
+    width: 500px;
+    align-items: flex-start;
+}
+
+.step-1 .round, .step-2 .round {
+    margin-top: 1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.step-1, .step-2 {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.step-1 .round {
+    background-color: #0fbeaf;
+}
+
+.step-2 .round {
+    background-color: #ff8c23;
+}
+
+.step-1 .detail, .step-2 .detail {
+    align-items: flex-start;
+    margin-left: 3rem;
+    width: 80%;
+}
+
+.diff-card-two-img .img-div {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.diff-card-one-img .bottom-desc, .diff-card-two-img .bottom-desc {
+    margin: 20px 0;
+}
+
+.detail h4 {
+    color: #ffffff;
+}
+
+.step-2 {
+    margin-top: 8rem;
+}
+
+.card .bottom {
+    width: 100%;
+    padding: 0 40px 0 0;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.registry-step {
+    flex: 1;
+}
+
+.registry-step span {
+    text-align: left;
+    width: 60%;
+    height: 80px;
+}
+
+.step.tool {
+    width: 60vw;
+}
+
+/* --- 平板电脑和小屏电脑之间的分辨率 --- */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .desc {
+        justify-content: center;
+        padding: 50px 0;
+    }
+
+    .desc span {
+        margin-top: 50px;
+        max-width: 100%;
+    }
+
+    .diff-card-two-img {
+        min-width: 300px;
+        width: 100%;
+    }
+
+    .iphone {
+        zoom: 0.35 !important;
+    }
+
+    .step {
+        zoom: 0.65;
+    }
+
+    .step.tool {
+        width: 80vw;
+    }
+
+    .registry-step {
+        margin-bottom: 5%;
+        min-width: 250px;
+    }
+}
+
+/* --- 横向放置的手机和竖向放置的平板之间的分辨率 --- */
+@media (min-width: 481px) and (max-width: 767px) {
+    .desc {
+        justify-content: center;
+        padding: 50px 0;
+    }
+
+    .desc img {
+        width: 100%;
+    }
+
+    .desc span {
+        margin-top: 50px;
+        max-width: 100%;
+    }
+
+    .card .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iphone {
+        zoom: 1 !important;
+        margin-bottom: 5%;
+    }
+
+    .card img {
+        margin-bottom: 5%;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .step {
+        align-items: center;
+        margin: 0 0 5% 0;
+    }
+
+}
+
+/* --- 横向放置的手机及分辨率更小的设备 --- */
+@media (max-width: 480px) {
+    .desc {
+        padding: 50px 0;
+    }
+
+    .desc img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iphone {
+        margin-bottom: 5%;
+    }
+
+    .card img {
+        margin-bottom: 5%;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .step {
+        width: 100%;
+        min-width: 100%;
+        align-items: flex-start;
+        margin: 0 0 10% 0;
+    }
+}

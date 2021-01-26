@@ -1,0 +1,405 @@
+/* --- flex ---*/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+/* --- 顶部描述 ---*/
+
+.desc {
+    padding: 50px 50px 50px 0;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.desc img {
+    height: 400px;
+}
+
+.desc span {
+    letter-spacing: 1px;
+    line-height: 2em;
+    text-indent: 2em;
+    max-width: 400px;
+}
+
+/* --- 介绍卡片 ---*/
+
+.card {
+    position: relative;
+    padding: 20px 2% 30px 2%;
+    width: 90%;
+    max-width: 1600px;
+    margin: 2% auto;
+    background-color: #153e82;
+    color: #ffffff;
+}
+
+.card img {
+    max-width: 280px;
+    width: 16vw;
+    /*margin: 5% 0;*/
+}
+
+.card .color-block {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 100px;
+    height: 10px;
+    background-color: #ff9205;
+}
+
+.card .title {
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.card .content {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.step {
+    align-items: flex-start;
+}
+
+.step-1 .round, .step-2 .round {
+    margin-top: 1rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.step-1, .step-2 {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.step-1 .round {
+    background-color: #0fbeaf;
+}
+
+.step-2 .round {
+    background-color: #ff8c23;
+}
+
+.step-1 .detail, .step-2 .detail {
+    align-items: flex-start;
+    margin-left: 3rem;
+    max-width: 85%;
+}
+
+.diff-card-two-img .img-div {
+    justify-content: space-around;
+    width: 100%;
+}
+
+.diff-card-one-img .bottom-desc, .diff-card-two-img .bottom-desc {
+    margin: 20px 0;
+}
+
+.detail h4 {
+    color: #ffffff;
+}
+
+.step-2 {
+    margin-top: 8rem;
+}
+
+.card .bottom {
+    width: 100%;
+    padding: 0 40px 0 0;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.registry-link {
+    align-items: flex-start;
+}
+
+.registry-link a {
+    color: #158dfe;
+    cursor: pointer;
+}
+
+.registry-link span:nth-child(2) {
+    margin: 2% 0;
+}
+
+.registry-step {
+    flex: 1;
+    min-width: 160px;
+}
+
+.registry-step span {
+    text-align: left;
+    height: 80px;
+}
+
+/* --- banner ---*/
+
+.banner {
+    padding: 0 10%;
+    justify-content: space-around;
+    width: 100%;
+    height: 460px;
+}
+
+.banner-first {
+    background-color: #f50048;
+}
+
+.banner-first .banner-desc .button-container .banner-btn {
+    color: #f50048;
+}
+
+.banner-second {
+    background-color: #ff4f0a;
+}
+
+.banner-second .banner-desc .button-container .banner-btn {
+    color: #f50048;
+}
+
+.banner-third {
+    background-color: #158dfe;
+}
+
+.banner-third .banner-desc .button-container .banner-btn {
+    color: #158dfe;
+}
+
+.banner-first, .banner-second, .banner-third {
+    user-select: none;
+}
+
+.banner-first img {
+    width: 200px;
+}
+
+.banner-second img, .banner-third img {
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.banner-desc {
+    width: 50%;
+    align-items: flex-start;
+}
+
+.banner-desc span {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.banner-desc span:first-child {
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.banner-desc span:not(:first-child) {
+    line-height: 35px;
+}
+
+.button-container {
+    justify-content: flex-start;
+}
+
+.button-container .banner-btn {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.button-container .banner-btn:nth-child(2) {
+    margin-left: 50px;
+}
+
+.button-container.product  .banner-btn:nth-child(2) {
+    margin-left: 48px;
+    background: transparent;
+    color: #ff2929;
+    border: 1px solid #ff2929;
+}
+
+.left .button-container .banner-btn {
+    color: #ffffff;
+    background-color: #ff2929;
+}
+
+/* --- 大屏幕 --- */
+@media (min-width: 1200px) {
+    .card .content .step {
+        align-items: center;
+    }
+
+    .card .content .step .step-1,.card .content .step .step-2 {
+        width: 90%;
+    }
+}
+
+/* --- 平板电脑和小屏电脑之间的分辨率 --- */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .banner {
+        padding: 0 0;
+    }
+
+    .banner-first img {
+        width: 200px;
+    }
+
+    .banner-second img, .banner-third img {
+        width: 300px;
+    }
+
+    .desc {
+        padding: 50px 0;
+    }
+
+    .desc span {
+        max-width: 200px;
+    }
+
+    .diff-card-two-img {
+        min-width: 300px;
+        width: 100%;
+    }
+
+    .card img {
+        max-width: 250px;
+    }
+
+    .step {
+        zoom: 0.45;
+    }
+
+    .registry-step {
+        margin-bottom: 5%;
+        min-width: 250px;
+    }
+}
+
+/* --- 横向放置的手机和竖向放置的平板之间的分辨率 --- */
+@media (min-width: 481px) and (max-width: 767px) {
+    .banner {
+        height: 800px;
+        padding-top: 90px;
+    }
+
+    .banner-desc {
+        width: 90%;
+    }
+
+    .banner-first img {
+        width: 200px;
+    }
+
+    .banner-second img, .banner-third img {
+        width: 500px;
+    }
+
+    .card .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card img {
+        margin-bottom: 5%;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .step {
+        align-items: flex-start;
+        margin: 0 0 5% 0;
+    }
+}
+
+/* --- 横向放置的手机及分辨率更小的设备 --- */
+@media (max-width: 480px) {
+    .banner {
+        padding: 90px 0 0 0;
+        height: 550px;
+    }
+
+    .banner-desc {
+        width: 90%;
+    }
+
+    .banner-desc span {
+        zoom: 0.7;
+    }
+
+    .banner-first img {
+        width: 50%;
+    }
+
+    .banner-second img, .banner-third img {
+        width: 90%;
+    }
+
+    .desc {
+        padding: 50px 0;
+    }
+
+    .desc img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card img {
+        margin-bottom: 5%;
+        width: 100%;
+        max-width: 100vw;
+    }
+
+    .step {
+        min-width: 100%;
+        align-items: flex-start;
+        margin: 0 0 10% 0;
+    }
+
+    .step-1 .detail, .step-2 .detail {
+        margin-left: 2rem;
+        max-width: 78%;
+    }
+}

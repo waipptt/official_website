@@ -1,0 +1,26 @@
+.hover-btn .product-info {
+    padding-bottom: 5px !important;
+    cursor: pointer;
+}
+
+#aywp, #dfzs, #zbzs {
+    display: none;
+    padding: 5px 15px;
+    color: #F8F8F8;
+}
+
+.hover-btn:hover #dfzs {
+    display: block;
+}
+
+.hover-btn:hover #aywp {
+    display: block;
+}
+
+.hover-btn:hover #zbzs {
+    display: block;
+}
+
+.header .nav > li > a:focus, .header .nav > li > a, .header .nav > li > a:focus, .header .nav > li > a:hover {
+    color: #F8F8F8 !important;
+}
