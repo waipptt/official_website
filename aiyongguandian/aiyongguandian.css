@@ -1,0 +1,512 @@
+/*!* --- flex ---*!*/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+html {
+    font-size: 20px;
+}
+/*顶部描述*/
+.banner-fourth {
+    background-color: #64a9ff;
+}
+.banner-fourth img {
+    margin-bottom: 10px;
+    width: 350px;
+}
+
+.desc {
+    padding: 50px 50px 50px 0;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.desc img {
+    width: 41.66vw;
+}
+.desc .img{
+    width: 27.5vw;
+    min-width: 330px;
+}
+.desc span {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    line-height: 2em;
+    text-indent: 2em;
+    max-width: 400px;
+}
+
+
+/* --- section区域 ---*/
+.section-block {
+    box-sizing: border-box;
+    /*height: 610px;*/
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #F8F8F8;
+    margin-top: 19px;
+}
+.section-left {
+    padding: 6.25% 0 0 11.67%;
+}
+.section-left .title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    margin-bottom: 5.2vw;
+}
+.section-left .content {
+    align-items: flex-start;
+}
+.section-left .content span{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 43px;
+
+}
+.section-right {
+    padding: 6.25% 11% 6.25% 0;
+}
+.section-right img {
+    width: 29vw;
+    min-width: 350px;
+}
+
+.printSend .section-right {
+    padding: 5.31% 5.26% 5.31% 0 ;
+}
+.printSend .section-right img {
+    width: 39.84vw;
+    min-width: 430px;
+}
+.customPrint .section-right {
+    min-width: 450px;
+    padding: 3.22% 7.76% 3.22% 0;
+}
+.customPrint .section-right img{
+    width: 37.13vw;
+}
+.baseMap  .section-right{
+    min-width: 450px;
+    padding: 2.34% 18.49% 2.34% 0;
+}
+.baseMap  .section-right img{
+    width: 21.14vw;
+}
+.watermark .section-right {
+    padding: 4.58% 6.88% 4.58% 0;
+}
+.watermark .section-right img {
+    width: 37.39vw;
+    min-width: 450px;
+}
+.batchmodifyCommodity .section-right{
+    padding: 2.5% 4.06% 2.5% 0;
+}
+.batchmodifyCommodity .section-right img{
+    width: 40.36vw;
+    min-width: 450px;
+}
+
+.moreExplore {
+    background: #F8F8F8;
+    height: 186px;
+    margin-top: 19px;
+    font-size: 2.4rem;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 186px;
+    text-align: center;
+}
+/* --- banner ---*/
+
+.banner {
+    padding: 0 10%;
+    justify-content: space-around;
+    width: 100%;
+    height: 460px;
+}
+
+.banner-first {
+    background-color: #f50048;
+}
+
+.banner-first .banner-desc .button-container .banner-btn {
+    color: #f50048;
+}
+
+.banner-second {
+    background-color: #ff4f0a;
+}
+
+.banner-second .banner-desc .button-container .banner-btn {
+    color: #f50048;
+}
+
+.banner-third {
+    background-color: #158dfe;
+}
+
+.banner-third .banner-desc .button-container .banner-btn {
+    color: #158dfe;
+}
+
+.banner-first, .banner-second, .banner-third {
+    user-select: none;
+}
+
+.banner-first img {
+    width: 200px;
+}
+
+.banner-second img, .banner-third img {
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.banner-desc {
+    width: 50%;
+    align-items: flex-start;
+}
+
+.banner-desc span {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.banner-desc span:first-child {
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.banner-desc span:not(:first-child) {
+    line-height: 35px;
+}
+
+.button-container {
+    justify-content: flex-start;
+}
+
+.button-container .banner-btn {
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.button-container .banner-btn:nth-child(2) {
+    margin-left: 50px;
+}
+
+.button-container.product  .banner-btn:nth-child(2) {
+    margin-left: 48px;
+    background: transparent;
+    color: #ff2929;
+    border: 1px solid #ff2929;
+}
+
+.left .button-container .banner-btn {
+    color: #ffffff;
+    background-color: #ff2929;
+}
+
+/* --- 大屏幕 --- */
+@media  only screen and (min-width: 1800px) {
+    html{
+        font-size: 20px;
+    }
+    .section-left {
+        padding: 6.25% 0 0 11.67%;
+    }
+}
+@media   only screen and (min-width: 1640px) and (max-width: 1799px)  {
+    html{
+        font-size: 18px;
+    }
+}
+@media  only screen and (min-width: 1550px) and (max-width: 1639px)   {
+    html {
+        font-size: 16px;
+    }
+}
+@media  only screen and (min-width: 1441px) and  (max-width: 1549px)  {
+    html {
+        font-size: 14px;
+    }
+}
+@media  screen and (min-width: 1161px) and (max-width: 1440px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+@media  only screen and (min-width: 1071px) and (max-width: 1160px)  {
+    html{
+        font-size: 10px;
+    }
+}
+@media  only screen and  (min-width: 867px) and (max-width: 1070px)  {
+    html {
+        font-size: 10px;
+    }
+    .desc span{
+        max-width: 300px;
+    }
+    .section-left {
+        padding:  6.25% 0 0 6.67%;;
+    }
+    .section-right {
+        padding: 6.25% 4% 6.25% 0;
+    }
+    .printSend .section-right {
+        padding: 5.31% 2.26% 5.31% 0 ;
+    }
+    .customPrint .section-right {
+        min-width: 450px;
+        padding: 3.22% 2.76% 3.22% 0;
+    }
+    .baseMap  .section-right{
+        padding: 2.34% 10.49% 2.34% 0;
+    }
+    .watermark .section-right {
+        padding: 4.58% 3.88% 4.58% 0;
+    }
+    .batchmodifyCommodity .section-right{
+        padding: 2.5% 2.06% 2.5% 0;
+    }
+
+}
+@media screen and (max-width: 992px) {
+    .sticky #aywp, .sticky #dfzs, .sticky #zbzs, .sticky #aygd, .sticky #ayjy, .sticky #aysp {
+        color: #cecece;
+    }
+    #aywp, #dfzs, #zbzs,  #aygd, #ayjy, #aysp  {
+        color: #cecece;
+    }
+    #aywp:hover, #dfzs:hover, #zbzs:hover,  #aygd:hover, #ayjy:hover, #aysp:hover {
+        color: #2e71f0;
+    }
+
+}
+@media only screen and  (min-width: 768px) and (max-width: 866px){
+    html {
+        font-size: 8px;
+    }
+    .section-left {
+        padding:  6.25% 0 0 2.67%;;
+    }
+    .section-right {
+        padding: 6.25% 4% 6.25% 0;
+    }
+    .printSend .section-right {
+        padding: 5.31% 1.26% 5.31% 0 ;
+    }
+    .customPrint .section-right {
+        min-width: 450px;
+        padding: 3.22% 2.76% 3.22% 0;
+    }
+    .baseMap  .section-right{
+        padding: 2.34% 10.49% 2.34% 0;
+    }
+    .watermark .section-right {
+        padding: 4.58% 3.88% 4.58% 0;
+    }
+    .batchmodifyCommodity .section-right{
+        padding: 2.5% 2.06% 2.5% 0;
+    }
+
+    .desc span {
+        max-width: 300px;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    html {
+        font-size: 10px;
+    }
+    .desc {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .section-block, .desc {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content {
+        justify-content: flex-start;
+    }
+    .section-left {
+        padding-left: 0;
+    }
+    .section-right,
+    .batchmodifyCommodity .section-right,
+    .watermark .section-right,
+    .baseMap  .section-right,
+    .customPrint .section-right,
+    .printSend .section-right
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .moreExplore {
+        height: 100px;
+        line-height: 100px;
+    }
+    .section-right img,
+    .printSend .section-right img,
+    .customPrint .section-right img,
+    .baseMap  .section-right img,
+    .watermark .section-right img,
+    .batchmodifyCommodity .section-right img,
+    .desc img
+    {
+        width: 95vw;
+        margin-bottom: 10px;
+        max-width: 500px;
+    }
+    .desc .img {
+       width: 95vw;
+        max-width: 500px;
+    }
+    .banner {
+        height: 800px;
+        padding-top: 90px;
+    }
+
+    .banner-desc {
+        width: 80%;
+    }
+
+    .banner-first img {
+        width: 200px;
+    }
+
+    .banner-second img, .banner-third img {
+        width: 500px;
+    }
+    .banner-fourth img {
+        width: 250px;
+    }
+}
+/* --- 平板电脑和小屏电脑之间的分辨率 --- */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .banner {
+        padding: 0 0;
+    }
+
+    .banner-first img {
+        width: 200px;
+    }
+
+    .banner-second img, .banner-third img {
+        width: 300px;
+    }
+
+
+    .diff-card-two-img {
+        min-width: 300px;
+        width: 100%;
+    }
+}
+
+ --- 横向放置的手机和竖向放置的平板之间的分辨率 ---
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* --- 横向放置的手机及分辨率更小的设备 --- */
+@media (max-width: 480px) {
+    html {
+        font-size: 10px;
+    }
+    .banner {
+        padding: 90px 0 0 0;
+        height: 550px;
+    }
+
+    .banner-desc {
+        width: 90%;
+    }
+
+    .banner-desc span {
+        zoom: 0.7;
+    }
+
+    .banner-first img {
+        width: 50%;
+    }
+
+    .banner-second img, .banner-third img {
+        width: 90%;
+    }
+    .banner-fourth img {
+        width: 200px;
+    }
+    .desc {
+        padding: 10px 0 0  0;
+    }
+    .section-right,
+    .batchmodifyCommodity .section-right,
+    .watermark .section-right,
+    .baseMap  .section-right,
+    .customPrint .section-right,
+    .printSend .section-right,
+    .desc,
+    .section-block
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    .section-right img,
+    .printSend .section-right img,
+    .customPrint .section-right img,
+    .baseMap  .section-right img,
+    .watermark .section-right img,
+    .batchmodifyCommodity .section-right img,
+    .desc img
+    {
+        width: 95vw;
+        margin-bottom: 10px;
+        min-width: auto;
+    }
+
+    .section-left .title {
+        font-size: 18px;
+    }
+   .section-left {
+       padding: 10px 0;
+   }
+}

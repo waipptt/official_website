@@ -75,7 +75,14 @@
     color: #158dfe;
 }
 
-.banner-first, .banner-second, .banner-third {
+.banner-fourth {
+    background-color: #64a9ff;
+}
+.banner-fourth .banner-desc .button-container .banner-btn {
+    color: #64a9ff;
+}
+
+.banner-first, .banner-second, .banner-third, .banner-fourth {
     user-select: none;
 }
 
@@ -83,11 +90,14 @@
     width: 200px;
 }
 
-.banner-second img, .banner-third img {
+.banner-second img, .banner-third img, .banner-fourth img {
     margin-bottom: 10px;
     width: 400px;
 }
-
+.banner-fourth img {
+    margin-bottom: 10px;
+    width: 350px;
+}
 .banner-desc {
     width: 50%;
     align-items: flex-start;
@@ -215,6 +225,8 @@ section:nth-child(odd) {
     max-height: 469px;
 }
 
+
+
 /* --- 大屏幕 --- */
 @media (min-width: 1200px) {
     .how-many-choose .desc .left .desc-img, .how-many-choose .desc .right .desc-img {
@@ -229,7 +241,7 @@ section:nth-child(odd) {
         padding: 0 0;
     }
 
-    .banner-first img {
+    .banner-first img{
         width: 200px;
     }
 
@@ -257,7 +269,9 @@ section:nth-child(odd) {
     .banner-first img {
         width: 200px;
     }
-
+    .banner-fourth img {
+        width: 250px;
+    }
     .banner-second img, .banner-third img {
         width: 500px;
     }
@@ -286,7 +300,9 @@ section:nth-child(odd) {
     .banner-first img {
         width: 50%;
     }
-
+   .banner-fourth img {
+       width: 40%;
+   }
     .banner-second img, .banner-third img {
         width: 90%;
     }
